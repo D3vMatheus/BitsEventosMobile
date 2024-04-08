@@ -4,5 +4,6 @@
     <color name="black">#000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="accept">#01DA64</color>
+    <color name="card">#274434</color>
     <color name="reject">#FC2515</color>
 </resources>
