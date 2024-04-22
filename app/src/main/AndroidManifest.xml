@@ -13,6 +13,9 @@
         android:theme="@style/Theme.BitsEventos"
         tools:targetApi="31">
         <activity
+            android:name=".VisualizarEvento"
+            android:exported="false" />
+        <activity
             android:name=".ListarEventosOrganizadores"
             android:exported="false" />
         <activity

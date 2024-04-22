@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".VisualizarEvento">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/EventCard"
+        android:layout_width="373dp"
+        android:layout_height="560dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/card"
+        android:backgroundTintMode="@color/card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="490dp">
+
+            <TextView
+                android:id="@+id/EventName"
+                android:layout_width="337dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="16dp"
+                android:text="Nome do evento"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Descricao"
+                android:layout_width="337dp"
+                android:layout_height="117dp"
+                android:layout_marginBottom="52dp"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toTopOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/EventName"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="18dp" />
+
+            <TextView
+                android:id="@+id/LocalEvento"
+                android:layout_width="166dp"
+                android:layout_height="22dp"
+                android:text="Localização do evento"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/Descricao"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="20dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="340dp"
+                android:layout_height="230dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.634"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/costaoeventos" />
+
+            <TextView
+                android:id="@+id/Taxa"
+                android:layout_width="142dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Taxa de inscriçao"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.107"
+                app:layout_constraintStart_toEndOf="@+id/LocalEvento"
+                app:layout_constraintTop_toBottomOf="@+id/Descricao"
+                app:layout_constraintVertical_bias="0.047" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/Subscribe"
+            android:layout_width="351dp"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/accept"
+            android:text="Inscrever em evento"
+            android:textSize="24sp" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -36,44 +36,45 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Nome do evento"
-                android:textSize="28sp"
-                android:textStyle="bold"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="20dp"
-                android:textColor="@color/white"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Descrição do evento"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="20dp"
-                android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Nome do evento"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Localização"
-                    android:textSize="16sp"
-                    android:layout_marginTop="50dp"
                     android:layout_marginStart="20dp"
-                    android:textColor="@color/white"/>
+                    android:layout_marginTop="10dp"
+                    android:text="Descrição do evento"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Localização"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <Button
-                android:backgroundTint="@color/accept"
+                android:id="@+id/ViewEvent"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:layout_gravity="bottom"
                 android:layout_margin="15dp"
+                android:backgroundTint="@color/accept"
                 android:text="Visualizar Evento"
-                android:textSize="24sp"/>
+                android:textSize="24sp" />
 
         </androidx.cardview.widget.CardView>
 
