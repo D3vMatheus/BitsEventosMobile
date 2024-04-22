@@ -10,10 +10,10 @@ import android.os.Bundle
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var emailEditText: EditText
-    private lateinit var passwordEditText: EditText
-    private lateinit var loginButton: Button
-    private lateinit var forgotPasswordTextView: TextView
+    lateinit var emailEditText: EditText
+    lateinit var passwordEditText: EditText
+    lateinit var loginButton: Button
+    lateinit var forgotPasswordTextView: TextView
 
     private val correctEmail = "admin@gmail.com"
     private val correctPassword = "admin"

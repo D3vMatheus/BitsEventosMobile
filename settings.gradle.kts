@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "BitsEventos"
 include(":app")
+
